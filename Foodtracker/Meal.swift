@@ -11,6 +11,7 @@ class Meal: NSObject, NSCoding { //add subclass NSObject, a base class, defines 
     var rating: Int
     
     //MARK: Archiving Paths
+    //extra note so I can commit and push
     //create a file path to the data
     static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first! //should end up with one match
     
@@ -44,6 +45,7 @@ class Meal: NSObject, NSCoding { //add subclass NSObject, a base class, defines 
     
     }
 
+    //add comment
     //MARK: NSCoding
     
     func encode(with aCoder: NSCoder) {//prepares data to be archived
